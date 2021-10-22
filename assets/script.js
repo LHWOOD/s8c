@@ -19,14 +19,15 @@ function blastOff() {
       let sTitle = document.createElement("h1");
       let sDescription = document.createElement("p");
 
-      sPic.setAttribute(
-        "src",
-        "https://apod.nasa.gov/apod/image/2110/SH2-308NS_1024.jpg"
-      );
+      // sPic.setAttribute(
+      //   "src",
+      //   "https://apod.nasa.gov/apod/image/2110/SH2-308NS_1024.jpg"
+      // );
+      sPic.setAttribute("src", `${data.hdurl}`);
       sTitle.textContent = data.title;
       sDescription.textContent = data.explanation;
 
-      sPic.setAttribute("style", "width: 75%");
+      sPic.setAttribute("style", "width: 100%");
       sTitle.setAttribute("style", "color: white");
       sDescription.setAttribute("style", "color: white");
 
